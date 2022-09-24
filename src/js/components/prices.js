@@ -1,4 +1,4 @@
-
+import Swiper, { Navigation, Pagination } from "swiper";
 let pricesSwiper;
 
 function swiperCard() {
