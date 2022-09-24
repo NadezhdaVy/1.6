@@ -8,22 +8,32 @@
 		  height: 100%;
 		  overflow: visible;
 		  border-radius: 6px;
+		 
 		}
 
-	&__item:first-child{
-		display: none;
-
+	
+		&__item:nth-child(2) {
+		
+			@media screen and (min-width:768px){
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+			}
+		}
+	
+	&__item:last-child {
+		
 		@media screen and (min-width:768px){
-			background-color: #F8F8F8;
-	      display: block;
-		 }
-	}
-	&__item:last-child{
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
+
 		.prices-swiper__inner-card::after{
 
 			@media screen and (min-width:768px){
 				display: none;
+				
 			 }
+			 
 		}
 	}
 
@@ -33,11 +43,24 @@
 		@media screen and (min-width:768px){
 			width: 100% !important;
 			height: 54px;
-			
-		 }
+			background-color: white;
+		}
 	}
 
-	&__inner-card {
+			&__item:first-child{
+				display: none;
+		
+				@media screen and (min-width:768px){
+					background-color: $body-color;
+					display: block;
+				 }
+
+				 .prices-swiper__inner-card{
+					background-color: $body-color;
+				}
+			}
+			
+			&__inner-card {
 		padding: 1.25em 1em;
 	   font-size: 14px;
 	   height: 200px;
@@ -143,10 +166,16 @@
 	}
 }
 
+
 .prices-swiper-header {
 	@media screen and (min-width:768px){
-		background-color: #F8F8F8;
+		background-color: $body-color;
 		border: none;
+
+		&::after{
+			display: none;
+		}
+		
 	 }
 
 }
