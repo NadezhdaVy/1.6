@@ -50,7 +50,7 @@ burger.addEventListener("click", showHideMenu);
 		asideMenu.classList.remove("aside-menu--active")
 		burger.classList.remove("burger-menu--clicked");
 		contactsMenu.classList.remove("userbar-items__contacts--left");
-	
+
 		e.preventDefault();
 	})
 

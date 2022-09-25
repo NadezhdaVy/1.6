@@ -2,9 +2,10 @@
 
 .aside-menu {
 	display: none;
-	position: fixed;
+	position: absolute;
 	top:0;
 	left: 0px;
+	height: 100%;
 	z-index: 999;
 	height:100%;
 	background-color: white;
@@ -13,12 +14,14 @@
 	width: 100%;
 
 	@media screen and (min-width: 1120px){
-		
+		// position: fixed;
 			display: block;
 			width: fit-content;
 			box-shadow: 16px 0px 52px 0px rgba(14, 24, 80,.2);
 
 }
+
+
 }
 .aside-menu--active {
 	display: block;
@@ -51,7 +54,8 @@
 	background: url(../img/search.svg);
 	position: absolute;
 	right: 1.5em;
-	top:1.9em;
+	top:3em;
+
 }
 
 .aside-main {
