@@ -1,19 +1,22 @@
 import Swiper, { Navigation, Pagination } from "swiper";
+
+
+
 let techSwiper;
 
 function swiperCard() {
 	
   if (window.innerWidth < 768) {
     if (!techSwiper) {
+
+		Swiper.use([Navigation, Pagination]);
       techSwiper = new Swiper('.technics-swiper',
 		 {
 			
 			direction: 'horizontal',
-	
-		 
-		
+			
 			pagination: {
-			  el: '.swiper-pagination',
+			  el: '.technics-pagination',
 			  clickable:true,
 			},
 
@@ -22,9 +25,6 @@ function swiperCard() {
 		
 		 breakpoints: {
 			
-
-		
-
 			330: {
 			  slidesPerView: 1.3,
 			  spaceBetween: 20

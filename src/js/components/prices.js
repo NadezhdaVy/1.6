@@ -1,10 +1,13 @@
 import Swiper, { Navigation, Pagination } from "swiper";
+
+
 let pricesSwiper;
 
 function swiperCard() {
 	
   if (window.innerWidth < 768) {
     if (!pricesSwiper) {
+		Swiper.use([Navigation, Pagination]);
       pricesSwiper = new Swiper('.prices-swiper',
 		 {
 			
@@ -13,7 +16,7 @@ function swiperCard() {
 		 
 		
 			pagination: {
-			  el: '.swiper-pagination',
+			  el: '.prices-pagination',
 			  clickable:true,
 			},
 

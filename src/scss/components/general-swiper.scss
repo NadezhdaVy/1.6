@@ -41,8 +41,7 @@
 &__inner-card {
 			width: 98%;
 	      height: 100%;
-	     
-	      align-self: center;
+			 align-self: center;
 	      background-color:white;
 	      box-shadow: 0 0 0 1px rgba(234, 234, 234, 1);
 	      padding: .7em 1em;
@@ -66,19 +65,29 @@
 }
 
 .swiper-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
 
 	@media screen and (min-width:768px){
-		display: none;
-	}
-	.swiper-pagination-bullet{
-		width: 12px;
-		height: 12px;
+				display: none;
+			}
+ 
+	.swiper-pagination-bullet {
 		background-color: rgba(221, 221, 221, 1);
+	  width: 12px;
+	  height: 12px;
+	  opacity: 1;
+	  transition: 0.2s;
+	  border-radius: 50%;
+	  margin: 0 6px;
+	  margin-bottom: 4px;
+	  cursor: pointer;
 	}
-	.swiper-pagination-bullet-active{
+ 
+	.swiper-pagination-bullet-active {
 		background-color: rgba(181, 182, 188, 1);
+	  opacity: 1;
 	}
-}
-
-
-
+ }

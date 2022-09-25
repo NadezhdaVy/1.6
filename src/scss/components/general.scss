@@ -14,6 +14,7 @@ body{
 	font-family: 'TT Lakes';
 	background-color: $body-color;
 
+
 }
 
 .main-page {
@@ -37,7 +38,7 @@ button:focus{
 	@media screen and (min-width: 1440px){
 		
 			max-width: 1720px;
-			// margin: 0 auto;
+			
 	}
 	}
 
@@ -73,10 +74,12 @@ span{
 	flex-grow: 1;
 	margin-left: 1em;
 	z-index: 99999999;
+	position: fixed;
+	left: 4.5em;
 
 	@media screen and (min-width:1120px){
 		visibility: visible;
-		position: absolute;
+		position: fixed;
 		left: 1em;
 		top:1.5em;
 		z-index: 9999999;
@@ -86,8 +89,9 @@ span{
 .userbar-items{
 	display: flex;
 	align-items: center;
-	width: 50%;
+	// width: 50%;
 	justify-content: flex-end;
+	margin-left: auto;
 
 	@media screen and (min-width:1120px){
 		width: fit-content;
@@ -121,8 +125,8 @@ span{
 
 	@media screen and (min-width:1120px){
 		visibility: visible;
-		position: absolute;
-		top: 44em;
+		position: fixed;
+		// top: 44em;
 		left: 1.5em;
 	}
 
@@ -134,13 +138,13 @@ span{
 }
 
 &__contacts--left {
-	position: absolute;
+	position: fixed;
 	top: 34em;
 	left: 0.5em;
 	display: flex;
 
 	@media screen and (min-width:768px){
-		position: absolute;
+		position: fixed;
 		top: 34em;
 		left: 0.5em;
 	}
@@ -161,5 +165,7 @@ span{
 	.burger-menu--clicked{
 		background-image: url(../img/close.svg);
 		z-index: 9999999;
+		position: fixed;
+		top:2em;
 	}
 

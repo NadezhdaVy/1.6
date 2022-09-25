@@ -1,21 +1,21 @@
 import Swiper, { Navigation, Pagination } from "swiper";
 
-let brandsListSwiper;
 
+
+let brandsListSwiper;
 
 function swiperCard() {
 	
+
   if (window.innerWidth < 768) {
     if (!brandsListSwiper) {
-     
+		Swiper.use([Navigation, Pagination]);
 		brandsListSwiper = new Swiper('.brands-swiper', {
 			
 			direction: 'horizontal',
-	
-		 
-		
+			
 			pagination: {
-			  el: '.swiper-pagination',
+			  el: '.brands-pagination',
 			  clickable:true,
 			},
 
