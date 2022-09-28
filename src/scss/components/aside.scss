@@ -7,14 +7,13 @@
 	left: 0px;
 	height: 100%;
 	z-index: 999;
-	height:100%;
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.7);
 	backdrop-filter: blur(10px);
 	width: 100%;
 
-	@media screen and (min-width: 1120px){
-		// position: fixed;
+	@media screen and (min-width: 1440px){
+		
 			display: block;
 			width: fit-content;
 			box-shadow: 16px 0px 52px 0px rgba(14, 24, 80,.2);
@@ -81,7 +80,8 @@
 	      position: relative;
 		}
 
-		&__link {
+		&__link--active {
+			
 		}
 
 		&__link--active::before {
@@ -117,10 +117,7 @@
 		&__email {
 			margin-bottom: 1.5em;
 		}
-
-		&__contact-info {
-		}
-
+		
 		&__number {
 			font-weight: 700;
 	      font-size: 1.5rem;

@@ -13,17 +13,20 @@ body{
 	padding: 0;
 	font-family: 'TT Lakes';
 	background-color: $body-color;
-
-
+   max-width: 1920px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .main-page {
 
 
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		margin-left: 320px;
-	}
 	
+	}
+
 }
 
 
@@ -33,13 +36,16 @@ button:focus{
 }
 
 .main-wrapper {
-	position: relative;
+	// position: relative;
 
 	@media screen and (min-width: 1440px){
-		
-			max-width: 1720px;
+		max-width: 1720px;
+		margin-left: auto;
+		margin-right: auto;
+			
 			
 	}
+
 	}
 
 .container{
@@ -48,6 +54,7 @@ button:focus{
 	@media screen and (min-width:768px){
 		padding: 1em 1.5em;
 	}
+
 
 }
 
@@ -75,7 +82,7 @@ span{
 	margin-left: 1em;
 	z-index: 99999999;
 	
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		visibility: visible;
 		position: absolute;
 		left: 0em;
@@ -93,7 +100,7 @@ span{
 	justify-content: flex-end;
 	margin-left: auto;
 
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		width: fit-content;
 	}
 	
@@ -103,7 +110,7 @@ span{
 		align-items: center;
 		position: relative;
 
-		@media screen and (min-width:1120px){
+		@media screen and (min-width:1440px){
 			margin-left: 0;
 		}
 	}
@@ -123,7 +130,7 @@ span{
 		position: static;
 	}
 
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		visibility: visible;
 		position: absolute;
 		// top: 44em;

@@ -5,7 +5,7 @@
 .page-header {
 	background-color: white;
 
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		visibility: hidden;
 		height: 1px;
 	}
@@ -16,7 +16,7 @@
 			display: flex;
 			align-items: center;
 
-			@media screen and (min-width:1120px){
+			@media screen and (min-width:1440px){
 				align-items: baseline;
 			}
 		}
@@ -47,7 +47,7 @@
 		pointer-events: none;
 		font-size: 0;
 		
-		@media screen and (min-width:1120px){
+		@media screen and (min-width:1440px){
 			opacity: 1;
 			font-size: 1rem;
 		   color: black;
@@ -76,7 +76,7 @@
 		display: flex;
 
 		.icon{
-			@media screen and (min-width:1120px){
+			@media screen and (min-width:1440px){
 				margin-right: 150px;
 				display: flex;
 				position: relative;
@@ -95,7 +95,7 @@
 			margin-left: 1em;
 		}
 
-		@media screen and (min-width:1120px){
+		@media screen and (min-width:1440px){
 			visibility: visible;
 			margin-bottom: 1em;
 			z-index: 999;
@@ -117,7 +117,7 @@
 
 		&__header {
 
-			@media screen and (min-width:1120px){
+			@media screen and (min-width:1440px){
 				padding-bottom: 0;
 			}
 		}
@@ -154,7 +154,7 @@
 	font-weight: 500;
 	padding: 1em 0;
 
-	@media screen and (min-width:1120px){
+	@media screen and (min-width:1440px){
 		margin: 0;
 		padding-top: 0;
 	}

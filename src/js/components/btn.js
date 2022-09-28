@@ -1,9 +1,5 @@
-let infoButton = document.querySelectorAll(".more-info");
-let innerContainer = document.querySelectorAll(".inner-container");
-
-
-
-
+const infoButton = document.querySelectorAll(".more-info");
+const innerContainer = document.querySelectorAll(".inner-container");
 
 for (let i = 0; i < infoButton.length;i++){
 	let button = infoButton[i];
@@ -24,34 +20,29 @@ for (let i = 0; i < infoButton.length;i++){
 	})
 }
 
-
-let burger = document.querySelector(".burger-menu");
-let mainPage = document.querySelector(".main-page");
-let logo = document.querySelector(".logo");
-let contactsMenu = document.querySelector(".userbar-items__contacts");
-let asideMenu = document.querySelector(".aside-menu");
-let menu = document.querySelector(".aside-wrapper");
+const burger = document.querySelector(".burger-menu");
+const mainPage = document.querySelector(".main-page");
+const logo = document.querySelector(".logo");
+const contactsMenu = document.querySelector(".userbar-items__contacts");
+const asideMenu = document.querySelector(".aside-menu");
+const menu = document.querySelector(".aside-wrapper");
 
 
 function showHideMenu () {
-
-		asideMenu.classList.toggle("aside-menu--active")
-		burger.classList.toggle("burger-menu--clicked");
-		contactsMenu.classList.toggle ("userbar-items__contacts--left");
-
-
+	asideMenu.classList.toggle("aside-menu--active")
+	burger.classList.toggle("burger-menu--clicked");
+	contactsMenu.classList.toggle ("userbar-items__contacts--left");
 }
-
 
 burger.addEventListener("click", showHideMenu);
 
-
-	document.addEventListener('keydown',function(e){
+document.addEventListener('keydown',function(e){
+	if(asideMenu.classList.contains("aside-menu--active")){
 		asideMenu.classList.remove("aside-menu--active")
 		burger.classList.remove("burger-menu--clicked");
 		contactsMenu.classList.remove("userbar-items__contacts--left");
-
 		e.preventDefault();
+		}
 	})
 
 
@@ -60,19 +51,12 @@ asideMenu.addEventListener('click', (e) => {
       asideMenu.classList.remove("aside-menu--active")
 		burger.classList.remove("burger-menu--clicked");
 		contactsMenu.classList.remove("userbar-items__contacts--left");
-	
-   }
+	}
 })
 
+const forms = document.querySelectorAll("form");
 
-
-
-
-
-let forms = document.querySelectorAll("form");
- 
-
-let my_func = function(event) {
+ const my_func = function(event) {
 	event.preventDefault();
 };
 
