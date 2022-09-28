@@ -53,10 +53,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NadezhdaVy/webcore1.6.git"
+    "url": "https://github.com/NadezhdaVy/1.6.git"
   },
   "bugs": {
-    "url": "https://github.com/NadezhdaVy/webcore1.6.git/issues"
+    "url": "https://github.com/NadezhdaVy/1.6.git/issues"
   },
-  "homepage": "https://github.com/NadezhdaVy/webcore1.6.git#readme"
+  "homepage": "https://github.com/NadezhdaVy/1.6.git#readme"
 }
